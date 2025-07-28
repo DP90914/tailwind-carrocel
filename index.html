@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body class="h-screen bg-[#0003] grid place-items-center">
+    <div class=" relative w-[80%] h-[80%] shadow-(0 0 16px #000) rounded-xl bg-center bg-cover overflow-hidden animate-[slider_12s_infinite_fade_4s]"></div>
+</body>
+
+<style>
+    @keyframes slider {
+        0%, 20% {
+            background-image: url(./img/alcool_em_gel.jpeg);
+            --text-description: "limpar as maos"
+    }
+         21%, 40% {
+            background-image: url(./img/bebedouro.jpeg);
+            --text-description: "hidratação"
+    }
+        41%, 60% {
+            background-image: url(./img/cantina.jpeg);
+            --text-description: "Matar a fome"
+    }
+        61%, 80% {
+            background-image: url(./img/pia.jpeg);
+            --text-description: "lavar a marmita"
+    }
+        81%, 100% {
+            background-image: url(./img/tv.jpeg);
+            --text-description: "distração"
+    }
+    }
+  
+    @keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    15%, 85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+  </style>
+</html>
